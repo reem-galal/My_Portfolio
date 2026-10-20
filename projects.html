@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Data projects by Reem Galal: a SQL Server data warehouse and an e-commerce funnel and retention analysis.">
+    <title>Reem Galal | Projects</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f59e0b'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='white'%3ERG%3C/text%3E%3C/svg%3E">
+
+
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" /> 
+
+
+    <!-- Bootstrap Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" /> <!--External CSS-->
+
+    <!-- Page-specific styles moved to css/style.css -->
+  </head>
+
+
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top py-3">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <span class="fw-bold tracking-wide">Reem Galal</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-label="Toggle navigation"
+          title="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center gap-2">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="skills.html">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <button
+                class="btn btn-outline-secondary theme-toggle-btn"
+                id="themeToggle"
+                onclick="toggleTheme()"
+                type="button"
+                aria-label="Toggle color theme"
+                title="Toggle color theme"
+              >
+                <i class="bi bi-sun-fill" id="themeIcon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container my-5 flex-grow-1 projects-page">
+      <div class="row mb-4">
+        <div class="col-12 text-center text-lg-start">
+          <h1 class="display-5 fw-bold accent-heading">My Projects</h1>
+          <p class="text-secondary">A collection of projects demonstrating my skills in SQL, data warehousing, ETL pipelines, and Python-based data analysis.</p>
+        </div>
+      </div>
+      <div class="d-flex flex-column gap-4">
+      <div class="card-wrapper">
+        <div class="project-card d-flex flex-column flex-md-row align-items-stretch" data-bs-toggle="collapse" data-bs-target="#project1Collapse" aria-controls="project1Collapse" aria-expanded="false" tabindex="0" role="button">
+          <div class="project-img-wrapper">
+            <img src="assets/Warehouse.jpg" alt="Data warehouse illustration" data-width="800" data-height="500">
+          </div>
+          <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="h4 fw-bold mb-0">SQL Data Warehouse</h3>
+                <i class="bi bi-chevron-down text-secondary toggle-icon fs-5"></i>
+              </div>
+              <p class="text-secondary small mb-3">Built a SQL Server data warehouse using ETL pipelines, data cleaning, and dimensional modeling to prepare CRM and ERP data for analysis.</p>
+            </div>
+            <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">SQL Server</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">T-SQL</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">ETL Pipelines</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">Data Modeling</span>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="project1Collapse">
+          <div class="project-details p-4 rounded-bottom">
+            <p class="text-secondary">Designed and implemented a SQL Server data warehouse integrating CRM and ERP data. The project follows the Bronze, Silver, and Gold layers to organize raw data, clean and validate records, and prepare analytics-ready tables.</p>
+            <ul class="text-secondary mt-3">
+            <li class="mb-2"><strong>Data Sources:</strong> Integrated CRM and ERP data from CSV files into SQL Server.</li>
+            <li class="mb-2"><strong>Approach:</strong> Implemented ETL workflows using T-SQL, applied data cleaning and deduplication, and designed fact and dimension tables using a star schema.</li>
+            <li class="mb-2"><strong>Outcome:</strong> Created a structured data warehouse that supports customer, product, and sales analysis through clean data and dimensional models.</li>
+            </ul>
+            <a href="https://github.com/reem-galal/sql-data-warehouse-project" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary mt-2"><i class="bi bi-github me-2"></i>View on GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-wrapper">
+        <div class="project-card d-flex flex-column flex-md-row align-items-stretch" data-bs-toggle="collapse" data-bs-target="#project2Collapse" aria-controls="project2Collapse" aria-expanded="false" tabindex="0" role="button">
+          <div class="project-img-wrapper">
+            <img src="assets/images2.jpg" alt="Data analysis report illustration" data-width="800" data-height="500">
+          </div>
+          <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="h4 fw-bold mb-0">E-commerce Funnel &amp; Retention Analysis</h3>
+                <i class="bi bi-chevron-down text-secondary toggle-icon fs-5"></i>
+              </div>
+              <p class="text-secondary small mb-3">Analyzed e-commerce user journeys, conversion funnels, customer retention, and RFM segments using SQL and Python.</p>
+            </div>
+            <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">SQL</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">Python</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">pandas</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">Customer Analytics</span>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="project2Collapse">
+          <div class="project-details p-4 rounded-bottom">
+            <p class="text-secondary">Analyzed a synthetic e-commerce dataset using SQL and Python to understand the customer journey, measure conversion rates, study retention, and segment customers based on purchasing behavior.</p>
+            <ul class="text-secondary mt-3">
+            <li class="mb-2"><strong>Objective:</strong> Understand where users drop off in the purchase funnel and how customer behavior differs across segments.</li>
+            <li class="mb-2"><strong>Approach:</strong> Used SQL (CTEs, window functions) for funnel and retention analysis, and Python with pandas and matplotlib to analyze customer behavior and visualize results.</li>
+            <li class="mb-2"><strong>Outcome:</strong> Identified conversion drop-offs, compared customer behavior across devices and channels, and explored customer segments based on purchasing activity.</li>
+            </ul>
+            <a href="https://github.com/reem-galal/ecommerce-funnel-retention-analysis" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary mt-2"><i class="bi bi-github me-2"></i>View on GitHub</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </main>
+
+
+
+    <footer class="bg-body-tertiary py-4 mt-auto">
+        <div class="container">
+            <div class="row align-items-center text-body-secondary small mb-3">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; 2026 Reem Galal. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="about.html" class="text-decoration-none text-body-secondary me-3">About</a>
+                    <a href="skills.html" class="text-decoration-none text-body-secondary me-3">Skills</a>
+                    <a href="projects.html" class="text-decoration-none text-body-secondary me-3">Projects</a>
+                    <a href="contact.html" class="text-decoration-none text-body-secondary">Contact</a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center gap-4 fs-4">
+                <a href="https://github.com/reem-galal" target="_blank" rel="noopener noreferrer" class="text-body-secondary" title="GitHub" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="mailto:galalreem9@gmail.com" class="text-body-secondary" title="Email" aria-label="Email"><i class="bi bi-envelope-at-fill"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+      <script src="js/main.js"></script>
+</body>
+</html>
